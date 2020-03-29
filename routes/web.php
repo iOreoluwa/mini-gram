@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/profile/{user}', 'ProfilesController@index')->name('profle.show');
+    
