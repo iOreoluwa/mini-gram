@@ -7,15 +7,18 @@
             <img src="https://instagram.fabv2-1.fna.fbcdn.net/v/t51.2885-19/s150x150/83907045_1052420581793081_6589762249169043456_n.jpg?_nc_ht=instagram.fabv2-1.fna.fbcdn.net&_nc_ohc=4FyND6yPc2IAX84an6V&oh=11f8718fb9ec88e93a1a23e40978c07a&oe=5EA887E0" alt="" class="rounded-circle p-5">
        </div>
        <div class="col-md-9 col-sm-12 pt-5">
-            <div><h1>{{$user->username}}</h1></div>
+            <div class="d-flex justify-content-between align-items-baseline">
+                <h1>{{$user->username}}</h1>
+                <a href="#">Add New Post</a>    
+            </div>
             <div class="d-flex">
                 <div class="pr-5"><strong>200</strong> posts</div>
                 <div class="pr-5"><strong>20k</strong> followers</div>
                 <div class="pr-5"><strong>23</strong> following</div>
             </div>
-            <div class="pt-4 font-weight-bold">Isaac Adegboye</div>
-            <div>Tech Enthusiast</div>
-            <div><a href="#">adegboye.ga</a></div>
+            <div class="pt-4 font-weight-bold">{{$user->name}}</div>
+            <div>{{$user->profile->description}}</div>
+            <div><a href="#">{{$user->profile->url}}</a></div>
        </div>
    </div>
    <div class="row pt-4">
